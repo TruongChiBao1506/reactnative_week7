@@ -1,3 +1,4 @@
+
 import { StyleSheet, Text, View, TouchableOpacity, TextInput, Image, Dimensions, SafeAreaView, Alert } from 'react-native';
 import Feather from '@expo/vector-icons/Feather';
 import { FlatList, Modal } from 'react-native-web';
@@ -173,7 +174,7 @@ const App = ({ navigation }) => {
 
             </View>
             <View style={Styles.Part2}>
-                <SafeAreaView>
+                <SafeAreaView style = {{height:'80%'}}>
                     <FlatList
                         data={data}
                         renderItem={({ item }) => <Item item={item} isEditing={item === editingTask}/>}
